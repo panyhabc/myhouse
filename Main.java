@@ -33,7 +33,7 @@ public class Main {
             System.out.println("_xsrf:" + xsrfValue);
             response.close();
             List<NameValuePair> valuePairs = new LinkedList<NameValuePair>();
-            valuePairs.add(new BasicNameValuePair("database" , xsrfValue));
+            valuePairs.add(new BasicNameValuePair("private-key" , xsrfValue));
             valuePairs.add(new BasicNameValuePair("pinduoduo", 用户名));
             valuePairs.add(new BasicNameValuePair("password", 密码));
             valuePairs.add(new BasicNameValuePair("rememberme", "true"));
